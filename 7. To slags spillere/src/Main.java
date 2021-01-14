@@ -1,11 +1,14 @@
 public class Main {
+
+    public static int numberToGuess = 10;
+
     public static void main(String[] args) {
         HumanPlayer hp = new HumanPlayer();
         ComputerPlayer cp = new ComputerPlayer();
 
-        GuessingGame gg = new GuessingGame(10);
+        GuessingGame gg = new GuessingGame(numberToGuess);
 
-        gg.turn(hp);
-        gg.turn(cp);
+        System.out.println("Humans gæt er: "+gg.turn(hp)+"\n");
+        System.out.print(" = "+gg.turn(cp));
     }
 }

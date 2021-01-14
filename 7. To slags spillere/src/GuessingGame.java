@@ -6,12 +6,6 @@ public class GuessingGame {
     }
 
     public boolean turn(Player gamer){
-        if (gamer.guessAnumber(10) == numberToBeGuessed){
-            System.out.println(gamer+ " gættede rigtigt");
-            return true;
-        } else {
-            System.out.println(gamer+" Gættede forkert");
-            return false;
-        }
+        return gamer.guessAnumber(Main.numberToGuess) == numberToBeGuessed;
     }
 }

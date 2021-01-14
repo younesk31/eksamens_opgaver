@@ -2,11 +2,11 @@ import java.util.Random;
 
 public class ComputerPlayer implements Player{
 
-    Random rnd = new Random();
     @Override
     public int guessAnumber(int max) {
+        Random rnd = new Random();
         int guess = rnd.nextInt(max)+1;
-        System.out.println("Computers gæt er: "+ guess);
+        System.out.print("Computers gæt: "+ guess);
         return guess;
     }
 }
