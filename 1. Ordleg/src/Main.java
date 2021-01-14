@@ -5,6 +5,9 @@ public class Main {
         ArrayList<String> word = new ArrayList<>();
         word.add("Hello");
         word.add("World");
+        word.add("Worlddd");
+        word.add("Wor");
+
         WordGame game = new WordGame();
 
         System.out.println("Repeat words: "+game.repeatWord(word,3));
