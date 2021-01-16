@@ -6,6 +6,6 @@ public class GuessingGame {
     }
 
     public boolean turn(Player gamer){
-        return gamer.guessAnumber(Main.numberToGuess) == numberToBeGuessed;
+        return gamer.guessAnumber(10) == numberToBeGuessed;
     }
 }

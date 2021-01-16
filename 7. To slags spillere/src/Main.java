@@ -1,6 +1,9 @@
+import java.util.Random;
+
 public class Main {
 
-    public static int numberToGuess = 10;
+    private static final Random rnd = new Random();
+    private static final int numberToGuess = rnd.nextInt(10)+1;
 
     public static void main(String[] args) {
         HumanPlayer hp = new HumanPlayer();
@@ -9,6 +12,7 @@ public class Main {
         GuessingGame gg = new GuessingGame(numberToGuess);
 
         System.out.println("Humans gæt er: "+gg.turn(hp)+"\n");
-        System.out.print(" = "+gg.turn(cp));
+        System.out.print(" = "+gg.turn(cp)+"\n\n");
+        System.out.println("The correct number to be guessed is: "+numberToGuess);
     }
 }
